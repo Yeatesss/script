@@ -1,15 +1,15 @@
 种豆提交互助码api
-http://api.turinglabs.net/api/v1/jd/bean/create/73qwpzbx4mgajmucs65vsdvscaakk7n7w35ivjy/
+http://api.turinglabs.net/api/v1/jd/bean/create/gp7ftflhccu4xvqktf4yug3psnbkm45w42avf4i/
 查看上车人数
 http://api.turinglabs.net/api/v1/jd/bean/count/
 
 农场提交互助码api
-http://api.turinglabs.net/api/v1/jd/farm/create/e2e5e1be41dd42a3b5f1351f5ede6842/
+http://api.turinglabs.net/api/v1/jd/farm/create/cd9ac299dc8b4af496a9f24a03cdfda9/
 查看上车人数
 http://api.turinglabs.net/api/v1/jd/farm/count/
 
 萌宠提交互助码api
-http://api.turinglabs.net/api/v1/jd/pet/create/MTE1NDQ5OTIwMDAwMDAwMzkzODIxNjc=/
+http://api.turinglabs.net/api/v1/jd/pet/create/MTAxODc2NTEzMzAwMDAwMDAzMjcwOTg2Nw==/
 查看上车人数
 http://api.turinglabs.net/api/v1/jd/pet/count/
 
