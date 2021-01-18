@@ -121,7 +121,7 @@ function showMsg() {
 async function helpFriends() {
   for (let code of $.newShareCodes) {
     if (!code) continue
-    await getFriendData(code)
+//     await getFriendData(code)
     await $.wait(1000)
   }
 }
@@ -459,28 +459,28 @@ function getTaskList(body={}) {
     })
   })
 }
-function getFriendData(inviteId) {
-  return new Promise((resolve) => {
-    $.post(taskPostUrl('nian_getHomeData',{"inviteId":inviteId}), async (err, resp, data) => {
-      try {
-        if (err) {
-          console.log(`${JSON.stringify(err)}`)
-          console.log(`${$.name} API请求失败，请检查网路重试`)
-        } else {
-          data = JSON.parse(data);
-          if (data && data.data['bizCode'] === 0) {
-            $.itemId = data.data.result.homeMainInfo.guestInfo.itemId
-            await collectScore('2',$.itemId,null,inviteId)
-          }
-        }
-      } catch (e) {
-        $.logErr(e, resp);
-      } finally {
-        resolve();
-      }
-    })
-  })
-}
+// function getFriendData(inviteId) {
+//   return new Promise((resolve) => {
+//     $.post(taskPostUrl('nian_getHomeData',{"inviteId":inviteId}), async (err, resp, data) => {
+//       try {
+//         if (err) {
+//           console.log(`${JSON.stringify(err)}`)
+//           console.log(`${$.name} API请求失败，请检查网路重试`)
+//         } else {
+//           data = JSON.parse(data);
+//           if (data && data.data['bizCode'] === 0) {
+//             $.itemId = data.data.result.homeMainInfo.guestInfo.itemId
+//             await collectScore('2',$.itemId,null,inviteId)
+//           }
+//         }
+//       } catch (e) {
+//         $.logErr(e, resp);
+//       } finally {
+//         resolve();
+//       }
+//     })
+//   })
+// }
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
